@@ -23,4 +23,4 @@ Backend:
 - JWT Authentication
 
 Frontend: https://your-vercel-url.vercel.app  
-Backend: https://your-backend.onrender.com
+Backend: https://shobhan-ai-sql-backend.onrender.com
