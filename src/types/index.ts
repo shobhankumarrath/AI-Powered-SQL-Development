@@ -14,3 +14,14 @@ export interface HistoryItem {
   sql_query: string;
   created_at: string;
 }
+export interface PreviewResponse {
+  success: boolean;
+  question: string;
+  query: string;
+}
+
+export interface ExecuteResponse {
+  success: boolean;
+  query: string;
+  rows: Record<string, any>[];
+}

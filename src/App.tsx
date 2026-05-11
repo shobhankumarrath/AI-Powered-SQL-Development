@@ -6,6 +6,7 @@ import SqlValidator from "./pages/SqlValidator";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import Layout from "./components/Layout";
 import { Toaster } from "react-hot-toast";
+import History from "./pages/History";
 
 function App() {
   return (
@@ -32,6 +33,16 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <SqlValidator />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/history"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <History />
               </Layout>
             </ProtectedRoute>
           }

@@ -14,6 +14,7 @@ export default function Sidebar() {
     localStorage.removeItem("user");
     toast.success("Logged out successfully");
     navigate("/login");
+    navigate("/history");
   };
 
   return (

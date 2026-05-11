@@ -14,4 +14,13 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+export const previewQuery = async (question: string) => {
+  const res = await api.post("/api/query/preview", { question });
+  return res.data;
+};
+
+export const executeQuery = async (query: string) => {
+  const res = await api.post("/api/query/execute", { query });
+  return res.data;
+};
 export default api;
